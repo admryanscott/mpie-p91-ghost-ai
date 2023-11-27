@@ -1,17 +1,20 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.AI;
 
 public class GhostLaughter : MonoBehaviour 
 {
 	public float minInterval = 5.0f;
 	public float maxInterval = 20.0f;
 	public AudioSource laughterSource;
+	
 
 	private float nextLaugh;
 
 	void Start () 
 	{
 		CalculateNextLaugh ();
+	
 	}
 	
 	void Update () 
